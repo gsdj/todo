@@ -14,18 +14,182 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #474e5c;
+  margin-bottom: .5rem;
+  min-height: 5vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + .6vmin);
   color: white;
 }
 
+.App-header nav {
+  display: flex;
+  width: 100vw;
+}
+
+.App-header ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.App-header li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.App-header a {
+  text-decoration: none;
+}
+
+.App-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .App-link {
-  color: #61dafb;
+  color: rgb(102, 175, 209);
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.App-linkTable {
+  color: #494949;
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.App-linkTable:hover {
+  opacity: 1;
+  color: #70a6be;
+}
+
+.active {
+  color: #bbeeff;
+}
+
+.App-link:hover {
+  opacity: 1;
+  color: #bbeeff;
+}
+
+.form {
+  border: 1px solid #898d8f;
+  border-radius: 10px;
+  padding: 10px 20px 0px 20px;
+  background-color: #f6fcfd63;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.App-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+
+.App-formElem {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 20px 0px;
+}
+
+.App-formElem:last-child {
+  display: flex;
+  flex-direction: row;
+  align-self:flex-end;
+}
+
+.App-form label {
+  text-align: left;
+}
+
+.App-form input {
+  width: 40vw;
+  border-radius: 6px;
+  font-size: calc(10px + 1vmin);
+}
+
+.App-form input:focus {
+  outline: none;
+  border: 2px solid;
+  border-color: #98c8df;
+}
+
+.App-form input:focus:hover {
+  transition: 0.8s;
+  border-color: #98c8df;
+}
+
+.App-btn {
+  border: 1px;
+  border-radius: 5px;
+  margin: auto 10px;
+  padding: 6px 20px 6px 20px;
+  transition: .5s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tableBtn {
+  border: 1px;
+  border-radius: 5px;
+  margin: 0px 5px;
+  padding: 3px 8px 3px 8px;
+  transition: .5s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tableBtn:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #70a6be;
+}
+
+.App-btn:hover {
+  opacity: 1;
+  background-color: #2e8cb8;
+  color: #e8f0f3;
+}
+
+.App-table {
+  border: solid 1px black ;
+  border-collapse: collapse;
+  /* width: 60vw; */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.App-table th,td {
+  padding: .5rem;    
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.App-table td:nth-child(2) {
+  min-width: 500px;
+}
+
+.App-table thead tr {
+  color: #f5fcff;
+  background-color: #474e5c;
+}
+
+.App-table tr {
+  border: solid 1px black ;
+  border-collapse: collapse;
+  transition: 0.4s;
+}
+
+.App-table tbody tr {
+  background-color:#eaf5f8;
+}
+
+.App-table tbody tr:hover {
+  opacity: 1;
+  background-color: #cadce2;
 }
 
 @keyframes App-logo-spin {
