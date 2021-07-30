@@ -85,7 +85,7 @@ function TodoForm(props) {
                 </div>
                 <div className="App-formElem">
                     <button className="App-btn" type="button" value="resetBtn" onClick={ResBtn}>Сброс</button>
-                    <button className="App-btn" type="submit" value="submit">Сохранить</button>
+                    <button className="App-submit" type="submit" value="submit">Сохранить</button>
                 </div>
             </form>
         </div>

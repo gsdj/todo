@@ -134,6 +134,16 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
+.App-submit {
+  border: 1px;
+  border-radius: 5px;
+  margin: auto 10px;
+  padding: 6px 20px 6px 20px;
+  background-color: #48b97b;
+  transition: .5s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
 .tableBtn {
   border: 1px;
   border-radius: 5px;
@@ -152,6 +162,12 @@
 .App-btn:hover {
   opacity: 1;
   background-color: #2e8cb8;
+  color: #e8f0f3;
+}
+
+.App-submit:hover {
+  opacity: 1;
+  background-color: #27aa52;
   color: #e8f0f3;
 }
 
